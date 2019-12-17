@@ -1,0 +1,13 @@
+
+
+2 ways to include data in your application
+
+1.get data from an API and copy it into a blank file with a JSON extension, then use the BUNDLE class(which is already included in swift) to access the data from the source files
+
+2.To Query the API directly (URLSession instead of BUNDLE)
+
+The data from an API is not in a swift readable format so we must use Decodable in order to use the data
+
+TRY
+If you see try? or try! then that just means I dont care about the error I just want the result of the function. AND you dont need a do catch
+they always go in the beginning to catch an error

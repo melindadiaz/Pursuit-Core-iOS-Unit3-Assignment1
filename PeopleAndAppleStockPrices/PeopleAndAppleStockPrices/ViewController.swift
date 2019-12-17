@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 //
     
-    
+    var userInfoRef = [UserInfo]()
     
     
     
@@ -20,7 +20,8 @@ class ViewController: UIViewController {
     
   override func viewDidLoad() {
     super.viewDidLoad()
-   
+    userInfoRef = UserInfo.getUserInfo()
+    print(userInfoRef.count)
   }
 
 //    func stockDifference() -> Double {
